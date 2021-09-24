@@ -49,6 +49,6 @@ Fugle Realtime API 是由時報資訊與[Fugle](https://www.fugle.tw/) 技術團
 1. 透過本服務取得之行情資料僅供參考，成交值及成交量不含零股及鉅額交易，使用者依本資料交易發生交易損失需自行負責。
 2. 時報資訊與群馥科技對資料內容錯誤、更新延誤或傳輸中斷不負任何責任。您應對您所為之任何金融或投資決策自行負責。
 3. 使用者應遵守[臺灣證券交易所股份有限公司交易資訊使用管理辦法](http://www.selaw.com.tw/LawArticle.aspx?LawID=G0100124)、[臺灣期貨交易所股份有限公司交易資訊使用管理辦法](http://www.selaw.com.tw/LawArticle.aspx?LawID=G0101422)、[財團法人中華民國證券櫃檯買賣中心有價證券交易資訊使用管理辦法](http://www.selaw.com.tw/LawArticle.aspx?LawID=G0100766)、各資訊來源提供者所定之資訊使用相關規範及智慧財產權相關法令，如有盜接、轉接交易資訊，或以其他方式出售、出租、轉讓、再授權交易資訊，或將交易資訊另行取樣並編製指數、其他衍生性商品或將之傳送予第三人，應負違約及侵權之相關民、刑事責任。
-
+4. 使用者須遵守臺灣證券交易所「[交易資訊使用管理辦法](https://www.twse.com.tw/downloads/zh/products/regulation_use.pdf)」等交易資訊管理相關規定，所有資訊以臺灣證券交易所公告資料為準。
 
 provided by [Fugle](https://www.fugle.tw/)
