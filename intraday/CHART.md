@@ -7,19 +7,19 @@ GET /intraday/chart
 ```
 
 ```
-curl -X GET "https://api.fugle.tw/realtime/v0.2/intraday/chart?symbolId=2884&apiToken=demo" -H "accept: */*"
+curl -X GET "https://api.fugle.tw/realtime/v0.3/intraday/chart?symbolId=2884&apiToken=demo" -H "accept: */*"
 ```
 
 ## Example
 
 ### request url
 ```
-https://api.fugle.tw/realtime/v0.2/intraday/chart?symbolId=2884&apiToken=demo
+https://api.fugle.tw/realtime/v0.3/intraday/chart?symbolId=2884&apiToken=demo
 ```
 
 ### websocket
 ```
-wss://api.fugle.tw/realtime/v0.2/intraday/chart?symbolId=2884&apiToken=demo
+wss://api.fugle.tw/realtime/v0.3/intraday/chart?symbolId=2884&apiToken=demo
 ```
 
 ### parameters
@@ -32,25 +32,61 @@ wss://api.fugle.tw/realtime/v0.2/intraday/chart?symbolId=2884&apiToken=demo
 ### response
 ```json
 {
-  "apiVersion": "0.2.0",
+  "apiVersion": "0.3.0",
   "data": {
     "info": {
-      "date": "2021-03-30",
-      "mode": "twse-sem",
+      "date": "2021-09-30",
+      "type": "EQUITY",
+      "exchange": "TWSE",
+      "market": "TSE",
       "symbolId": "2884",
       "countryCode": "TW",
       "timeZone": "Asia/Taipei",
-      "lastUpdatedAt": "2021-03-30T13:30:00.000+08:00"
+      "lastUpdatedAt": "2021-09-30T09:05:00.000+08:00"
     },
     "chart": {
-      "2021-03-30T13:30:00.000+08:00": {
-        "open": 26.2,
-        "high": 26.2,
-        "low": 26.2,
-        "close": 26.2,
-        "volume": 2766000,
-        "unit": 2766
-      }
+      "o": [
+        26.35,
+        26.25,
+        26.25,
+        26.25,
+        26.25
+      ],
+      "h": [
+        26.35,
+        26.3,
+        26.3,
+        26.3,
+        26.3
+      ],
+      "l": [
+        26.25,
+        26.25,
+        26.25,
+        26.25,
+        26.25
+      ],
+      "c": [
+        26.25,
+        26.3,
+        26.3,
+        26.25,
+        26.3
+      ],
+      "v": [
+        893,
+        48,
+        40,
+        231,
+        117
+      ],
+      "t": [
+        1632963660000,
+        1632963720000,
+        1632963780000,
+        1632963840000,
+        1632963900000
+      ]
     }
   }
 }
@@ -72,26 +108,22 @@ wss://api.fugle.tw/realtime/v0.2/intraday/chart?symbolId=2884&apiToken=demo
 ### info object
 | Name | Type | Description |
 |:--|:--|:--|
-|  `lastUpdatedAt` | ISO 8601 | 本筆資料最後更新時間 |
 |  `date` | string | 本筆資料所屬日期 |
-|  `mode` | string | 市場別 |
+|  `type` | string | ticker 類別 |
+|  `exchange` | string | 交易所|
+|  `market` | string | 市場別 |
 |  `symbolId` | string | 股票代號 |
 |  `countryCode` | string | 股票所屬國家ISO2代碼 |
 |  `timeZone` | string | 股票所屬時區 |
+|  `lastUpdatedAt` | ISO 8601 | 本筆資料最後更新時間 |
 
 
 ### chart object
 | Name | Type | Description |
 |:--|:--|:--|
-|  `dateTimeKey` | [price object](#price-object) | - |
-
-
-#### price object
-| Name | Type | Description |
-|:--|:--|:--|
-|  `open` | number | 此分鐘的開盤價 |
-|  `high` | number | 此分鐘的最高價 |
-|  `low` | number | 此分鐘的最低價 |
-|  `close` | number | 此分鐘的收盤價 |
-|  `unit` | number | 此分鐘的交易張數 |
-|  `volume` | number | 此分鐘的交易量 |
+|  `o` | [number] | 此分鐘的開盤價 |
+|  `h` | [number] | 此分鐘的最高價 |
+|  `l` | [number] | 此分鐘的最低價 |
+|  `c` | [number] | 此分鐘的收盤價 |
+|  `v` | [number] | 此分鐘的成交量 (指數：金額；個股：張數；興櫃股票及零股：股數) |
+|  `t` | [number] | Unix timestamp (每分鐘單位) |
