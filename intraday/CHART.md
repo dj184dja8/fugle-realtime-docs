@@ -121,9 +121,9 @@ wss://api.fugle.tw/realtime/v0.3/intraday/chart?symbolId=2884&apiToken=demo
 ### chart object
 | Name | Type | Description |
 |:--|:--|:--|
-|  `o` | [number] | 此分鐘的開盤價 |
-|  `h` | [number] | 此分鐘的最高價 |
-|  `l` | [number] | 此分鐘的最低價 |
-|  `c` | [number] | 此分鐘的收盤價 |
-|  `v` | [number] | 此分鐘的成交量 (指數：金額；個股：張數；興櫃股票及零股：股數) |
-|  `t` | [number] | Unix timestamp (每分鐘單位) |
+|  `o` | number | 此分鐘的開盤價 |
+|  `h` | number | 此分鐘的最高價 |
+|  `l` | number | 此分鐘的最低價 |
+|  `c` | number | 此分鐘的收盤價 |
+|  `v` | number | 此分鐘的成交量 (指數：金額；個股：張數；興櫃股票及零股：股數) |
+|  `t` | number | Unix timestamp (每分鐘單位) |
