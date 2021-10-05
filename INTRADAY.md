@@ -8,6 +8,7 @@
 |  [quote](./intraday/QUOTE.md) |  `/intraday/quote` | 取得 個股/指數 逐筆交易金額、狀態、統計資訊 |
 |  [meta](./intraday/META.md) |  `/intraday/meta` | 取得 個股/指數 當日基本資訊 |
 |  [dealts](./intraday/DEALTS.md) |  `/intraday/dealts` | 取得個股當日所有成交資訊 |
+|  [volumes](./intraday/VOLUMES.md) |  `/intraday/volumes` | 提供盤中個股即時分價量 |
 
 ## Required Parameters
 | Name | Type | Required | Description |
