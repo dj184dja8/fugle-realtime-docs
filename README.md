@@ -21,7 +21,7 @@ Fugle Realtime API 是由時報資訊與[Fugle](https://www.fugle.tw/) 技術團
 | language | github  |
 |:---|:---|
 | Node.js | [fugle-realtime-node](https://github.com/fugle-dev/fugle-realtime-node)  |
-| Python | [fugle-realtime-py](https://github.com/fugle-dev/fugle-realtime-py)  |
+| Python | [fugle-realtime-python](https://github.com/fugle-dev/fugle-realtime-python)  |
 | Python Demo | [fugle-realtime-demo](https://github.com/fugle-dev/fugle-realtime-demo/) |
 
 
