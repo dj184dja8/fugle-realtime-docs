@@ -32,6 +32,7 @@ Fugle Realtime API 是由時報資訊與[Fugle](https://www.fugle.tw/) 技術團
 | language | github  |
 |:---|:---|
 | Ruby | [elct9620/fugle-api](https://github.com/elct9620/fugle-api) |
+| Rust | [tommady/fugle-rs](https://github.com/tommady/fugle-rs) |
 
 
 ## More Information
