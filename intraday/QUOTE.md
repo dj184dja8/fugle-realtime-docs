@@ -53,6 +53,7 @@ wss://api.fugle.tw/realtime/v0.3/intraday/quote?symbolId=2884&apiToken=demo
       "isCloseDelayed": false,
       "isHalting": false,
       "isClosed": true,
+      "isDealt": true,
       "total": {
         "at": "2021-09-30T13:30:00.000+08:00",
         "transaction": 1900,
@@ -185,6 +186,7 @@ wss://api.fugle.tw/realtime/v0.3/intraday/quote?symbolId=2884&apiToken=demo
 |  `isOpenDelayed` | boolean | 最近一次更新是否為延後開盤狀態 |
 |  `isCloseDelayed` | boolean | 最近一次更新是否為延後收盤狀態 |
 |  `isHalting` | boolean | 最近一次更新是否為暫停交易 |
+|  `isDealt` | boolean | 最近一次更新是否包含最新成交(試撮)價 |
 |  `isClosed` | boolean | 當日是否為已收盤 |
 |  `total` | [total object](#total-object) |   |
 |  `trial` | [trial object](#trial-object) |   |
